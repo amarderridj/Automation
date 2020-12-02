@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="function"  parallel ="classes" thread-count="3" >
+<!--  
+<groups>
+<run>
+<include name ="Adhoc"/>
+</run>
+</groups> -->
+
+<listeners>
+<listener class-name="RUN.Ilistners"/>
+</listeners>
+
+<test name ="Adhoc">
+<parameter name ="browser" value ="chrome"></parameter>
+<parameter name ="URI" value ="https://www.facebook.com"></parameter>
+
+
+
+<classes>
+<!--  <class name ="RUN.Groups"/>-->
+
+ <!--  <class name ="RUN.TestNG"></class>-->
+ 
+ <class name ="RUN.Shots"></class>
+
+</classes>
+</test>
+</suite>
